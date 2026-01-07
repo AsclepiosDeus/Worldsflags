@@ -7,10 +7,19 @@ from Bases.Shapes import *
 
 hideturtle()
 
-couleurs= ['#2D2926', '#FFCD00', '#C8102E']
+couleurs= ['#4189DD']
 for c in couleurs:
-    rectangle(c,100,200)
+    rectangle(c,300,200)
     forward(100)
+
+left(90)
+forward(100)
+left(-90)
+forward(50)
+
+right(54)
+star('#FFFFFF',5,-108,50)
+right(-54)
 
 up()
 goto(0,0) 

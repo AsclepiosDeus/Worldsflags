@@ -58,7 +58,7 @@ def poly_star(coul, n, rayon):
         cap=heading()
         setheading(0)
         left(54)
-        etoile(coul,4,108,4)
+        star(coul,4,108,4)
         right(54)
         setheading(cap)
         forward(2*rayon*sin(pi/n))
@@ -104,3 +104,24 @@ def tri_rectangle(coul,base,hauteur):
     forward(hauteur)
     left(90)
     end_fill()
+
+def ashoka_chakra(coul,radius=100):
+    speed(0)
+    color(coul)  
+    width(3)
+
+    penup()
+    goto(0, -radius)
+    pendown()
+    circle(radius)
+
+    penup()
+    goto(0, 0)
+    setheading(90)
+
+    for i in range(24):
+        pendown()
+        forward(radius)
+        backward(radius)
+        penup()
+        right(15) 
